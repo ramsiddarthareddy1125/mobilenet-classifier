@@ -17,8 +17,8 @@ app = FastAPI(title="MobileNet Image Classifier")
 model = MobileNetV2(weights="imagenet")
 
 # Serve CSS and JavaScript
-app.mount("/css", StaticFiles(directory="css"), name="css")
-app.mount("/js", StaticFiles(directory="js"), name="js")
+#app.mount("/css", StaticFiles(directory="css"), name="css")
+#app.mount("/js", StaticFiles(directory="js"), name="js")
 
 
 @app.get("/")
